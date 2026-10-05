@@ -10,6 +10,10 @@ def home():
 def about():
     return render_template("about.html")
 
+@pages_bp.route("/ble_presence")
+def ble_presence():
+    return render_template("ble_presence.html")
+
 @pages_bp.route("/form")
 def form():
     return render_template("form.html")
