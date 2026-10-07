@@ -10,9 +10,19 @@ def home():
 def about():
     return render_template("about.html")
 
+@pages_bp.route("/projects")
+def projects():
+    return render_template("projects.html")
+
+@pages_bp.route("/homebot")
+def homebot():
+    return render_template("homebot.html")
+
 @pages_bp.route("/ble_presence")
 def ble_presence():
     return render_template("ble_presence.html")
+
+
 
 @pages_bp.route("/form")
 def form():

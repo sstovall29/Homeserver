@@ -3,22 +3,35 @@
 {% block title %}Presence{% endblock %}
 {% block content %}
 
-<div class="card">
-  <div class="card-body">
-    <h1>BLE Presence</h1>
-    <p>See what BLE devices are broadcasting in the house.</p>
+<div class=" text-light py-5">
+  <div class="container text-center">
+    <h2 class="mb-3">BLE Presence</h2>
+    <p class="lead mx-auto text-dark" style="max-width: 700px;">
+      See what BLE devices are broadcasting in the house.
+    </p>
   </div>
 </div>
 
-<div class="card">
-  <p>
-    Detected Devices:
-  </p>
-  <ul>
-    <li>Spencer's iPhone</li>
-  </ul>
-</div>
 
+<div class="container">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="card-title mb-0">Detected Devices</h5>
+
+        <button type="button" class="btn btn-primary">
+          Add Device
+        </button>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          Spencer's iPhone
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 
 

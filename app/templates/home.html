@@ -2,12 +2,28 @@
 {% block title %}{{ APP_NAME }}{% endblock %}
 {% block content %}
 
-<div class="card">
-  <div class="card-body">
-    <h1>{{ APP_NAME }}</h1>
-    <p>The home of 210 Robotics</p>
+<div class=" text-light py-5">
+  <div class="container text-center">
+    <h1 class="mb-3">210 Robotics Home Server</h1>
+    <p class="lead mx-auto text-dark" style="max-width: 700px;">
+      Web App Launch Platform
+    </p>
+    <p class="lead mx-auto text-dark" style="max-width: 700px;">
+      261 Bargeron Drive Augusta, GA
+    </p>
   </div>
 </div>
+
+<div class=" text-light py-2">
+  <div class="container text-center">
+     <img
+          src="{{ url_for('static', filename='images/bald_siv.png') }}"
+          alt="Bald Siv at Army Navy"
+          style="height: 800px; width: auto;"
+      >
+  </div>
+</div>
+
 
 
 
